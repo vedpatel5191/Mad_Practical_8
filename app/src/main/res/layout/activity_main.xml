@@ -14,7 +14,8 @@
         android:scrollbars="none"
         android:paddingBottom="15dp"
         android:paddingLeft="24dp"
-        android:paddingRight="24dp">
+        android:paddingRight="24dp"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
@@ -43,19 +44,23 @@
                 app:layout_constraintTop_toBottomOf="@id/txt_title"
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="24dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                android:background="?cardBackgroundColor"
+                >
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="?android:background">
+                    android:background="?cardBackgroundColor"
+                    >
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="180dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_alarm" />
+                        android:src="@drawable/img_alarm"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -63,7 +68,9 @@
                         android:text="@string/txt_alarmtitle1"
                         android:padding="15dp"
                         android:textSize="18sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:background="?cardBackgroundColor"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -71,14 +78,18 @@
                         android:text="@string/txt_alarmtitle2"
                         android:paddingStart="15dp"
                         android:paddingEnd="15dp"
-                        android:textSize="16sp"/>
+                        android:textSize="16sp"
+                        android:background="?cardBackgroundColor"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/txt_alarmtitle3"
                         android:padding="15dp"
-                        android:textSize="14sp"/>
+                        android:textSize="14sp"
+                        android:background="?cardBackgroundColor"
+                        />
 
                     <TextView
                         android:id="@+id/txt_alarmcontent"
@@ -88,7 +99,9 @@
                         android:textStyle="bold"
                         android:padding="15dp"
                         android:textSize="18sp"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:background="?cardBackgroundColor"
+                        />
 
                     <com.google.android.material.button.MaterialButton
                         android:layout_width="wrap_content"
@@ -119,20 +132,23 @@
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="24dp"
                 app:cardElevation="5dp"
-                android:visibility="gone">
+                android:visibility="gone"
+                android:background="?cardBackgroundColor">
 
                 <LinearLayout
                     android:id="@+id/linear_create"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:background="#EAEFEA">
+                    android:background="?cardBackgroundColor">
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="180dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/img_alarm" />
+                        android:src="@drawable/img_alarm"
+                        android:background="?cardBackgroundColor"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -141,7 +157,8 @@
                         android:layout_gravity="center"
                         android:paddingTop="15dp"
                         android:textSize="18sp"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:background="?cardBackgroundColor"/>
 
                     <TextView
                         android:id="@+id/txt_alarmsetcontent"
@@ -150,7 +167,8 @@
                         android:text="11:45:17 PM Aug,14 2022"
                         android:textStyle="bold"
                         android:textSize="18sp"
-                        android:layout_gravity="center"/>
+                        android:layout_gravity="center"
+                        android:background="?cardBackgroundColor"/>
 
                     <com.google.android.material.button.MaterialButton
                         android:layout_width="wrap_content"
@@ -171,3 +189,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    https://blog.prototypr.io/implementing-dark-theme-in-android-dfe63e62145d-->
